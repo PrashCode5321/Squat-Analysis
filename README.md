@@ -21,8 +21,10 @@ The model architecture for squat classification consists of:
 This combination allows the model to capture both spatial and temporal features of the squat motion.
 
 #### Input Data
-- Output from Mediapipe pose estimation
-- DLT transformation
+DLT transformation is performed on the output from Mediapipe pose estimation to get the depth coordinate.  
+The shape of the data procured from this transformation is `(300, 19, 3)`, where the first dimension is the number of frames after padding, the second dimension represents the subset of key points chosen from the Mediapipe output and the last dimension is the 3D coordinate.  
+All the data was provided by the authors of the base paper [1].
+
 
 #### Model Flow
 1. Input data is passed through the CNN block
@@ -87,3 +89,6 @@ The corresponding posture corrections for the same instance.
 3. Develop a monocular depth estimation approach
 4. Explore faster alternatives for real-time estimation and correction
 5. Focus on edge computing for better performance
+
+## References  
+[1] Chariar, M., Rao, S., Irani, A., Suresh, S., & Asha, C. S. (2023). AI Trainer: Autoencoder Based Approach for Squat Analysis and Correction. IEEE Access, 11, 107135-107149. https://doi.org/10.1109/ACCESS.2023.3316009
