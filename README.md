@@ -76,9 +76,9 @@ Below the model's angle corrections for an instance of powerlifting squat perfor
 
 The corresponding posture corrections for the same instance.
 ![Insert adjusted coordinates figure here](results/corrections/Left%20Hip.png)
-![Insert adjusted coordinates figure here](results/corrections/Rightt%20Hip.png)
+![Insert adjusted coordinates figure here](results/corrections/Right%20Hip.png)
 ![Insert adjusted coordinates figure here](results/corrections/Left%20Knee.png)
-![Insert adjusted coordinates figure here](results/corrections/Rightt%20Hip.png)
+![Insert adjusted coordinates figure here](results/corrections/Right%20Knee.png)
 
 ## Future Work
 
