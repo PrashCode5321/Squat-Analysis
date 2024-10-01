@@ -63,19 +63,22 @@ The ConvGRU with attention model showed the best performance, achieving the high
 Given below are the corresponding loss curve and confusion matrix of the ConvGRU model:
 
 
-![Insert loss curves figure here](results\loss\CGRU with Attention Model.png "Loss Curve")
+![Insert loss curves figure here](results/loss/CGRU%20with%20Attention%20Model.png "Loss Curve")
 
-![Insert accuracy curves figure here](results\accuracy\CGRU with Attention Model.png "Accuracy Curve")
+![Insert accuracy curves figure here](results/accuracy/CGRU%20with%20Attention%20Model.png "Accuracy Curve")
 
-![Insert confusion matrices figure here](results\confusion_matrices\CGRU with Attention Model.png "Confusion Matrix")
+![Insert confusion matrices figure here](results/confusion_matrices/CGRU%20with%20Attention%20Model.png "Confusion Matrix")
 
 ### Regression Model Performance
 
-[Insert regression model loss curve figure here]
+Below the model's angle corrections for an instance of powerlifting squat performed by a volunteer:
+![Insert joint angles comparison figure here](results/corrections/Angles.png "Correction of Joint Angles")
 
-[Insert joint angles comparison figure here]
-
-[Insert adjusted coordinates figure here]
+The corresponding posture corrections for the same instance.
+![Insert adjusted coordinates figure here](results/corrections/Left%20Hip.png)
+![Insert adjusted coordinates figure here](results/corrections/Rightt%20Hip.png)
+![Insert adjusted coordinates figure here](results/corrections/Left%20Knee.png)
+![Insert adjusted coordinates figure here](results/corrections/Rightt%20Hip.png)
 
 ## Future Work
 
