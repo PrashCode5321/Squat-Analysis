@@ -20,7 +20,7 @@ class CGRUModel(nn.Module):
         self.layer_dim = layer_dim
         self.conv = nn.Conv1d(input_dim, hidden_dim * 2, 3)
         self.relu = nn.ReLU()
-        self.pool = nn.AdaptiveAvgPool1d(hidden_dim)
+        self.pool = nn.Maxpool()
         self.batch_norm = nn.BatchNorm1d(298, eps=0.001, momentum=0.99)
         self.gru = nn.GRU(
             hidden_dim,
