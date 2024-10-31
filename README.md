@@ -89,6 +89,3 @@ The corresponding posture corrections for the same instance.
 3. Develop a monocular depth estimation approach
 4. Explore faster alternatives for real-time estimation and correction
 5. Focus on edge computing for better performance
-
-## References  
-[1] Chariar, M., Rao, S., Irani, A., Suresh, S., & Asha, C. S. (2023). AI Trainer: Autoencoder Based Approach for Squat Analysis and Correction. IEEE Access, 11, 107135-107149. https://doi.org/10.1109/ACCESS.2023.3316009
