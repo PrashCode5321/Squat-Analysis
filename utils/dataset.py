@@ -16,10 +16,11 @@ class SquatDataset(Dataset):
     Create PyTorch dataset using filepaths and one-hot encoded classes in the reference CSV file.
     """
 
-    def __init__(self, csv_file, root_dir, device, transform=None):
+    def __init__(self, csv_file, root_dir, device="cpu", transform=None):
         self.labels = pd.read_csv(csv_file)
         self.root_dir = root_dir
         self.transform = transform
+        self.device = device
 
     def __len__(self):
         return len(self.labels)
@@ -32,12 +33,12 @@ class SquatDataset(Dataset):
 
         data = np.load(img_name)
         data = np.array(data).astype(np.float32)
-        data = torch.from_numpy(data).type(torch.float).to(device)
+        data = torch.from_numpy(data).type(torch.float).to(self.device)
 
         label = self.labels.iloc[idx, 1:]
         label = np.array([label])
         label = label.astype("float").reshape(-1, 1)
-        label = torch.from_numpy(label).type(torch.float).to(device)
+        label = torch.from_numpy(label).type(torch.float).to(self.device)
 
         if self.transform:
             data = self.transform(data)

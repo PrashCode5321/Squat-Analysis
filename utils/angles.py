@@ -60,7 +60,7 @@ def ik_transform(original_smooth, data, c):
     for iteration in range(num_iterations):
         optimizer.zero_grad()
 
-        current_angles = compute_angles(original_points)
+        current_angles = compute_angles(original_points).to(target_angles.device)
         loss = torch.mean(torch.abs(current_angles - target_angles))
 
         loss.backward()
