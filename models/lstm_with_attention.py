@@ -1,7 +1,7 @@
 import torch
 from torch import nn
-from lstm import LSTMModel
-from attention import SelfAttention
+from models.lstm import LSTMModel
+from models.attention import SelfAttention
 import os
 
 SEED = os.environ.get("SEED", 42)

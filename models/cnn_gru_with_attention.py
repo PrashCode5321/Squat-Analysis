@@ -1,7 +1,7 @@
 import torch
 from torch import nn
-from cnn_gru import CGRUModel
-from attention import SelfAttention
+from models.cnn_gru import CGRUModel
+from models.attention import SelfAttention
 import os
 
 SEED = os.environ.get("SEED", 42)

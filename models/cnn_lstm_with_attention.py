@@ -1,7 +1,7 @@
 import torch
 from torch import nn
-from cnn_lstm import CLSTMModel
-from attention import SelfAttention
+from models.cnn_lstm import CLSTMModel
+from models.attention import SelfAttention
 import os
 
 SEED = os.environ.get("SEED", 42)

@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from models.rnn import RNNModel
-from attention import SelfAttention
+from models.attention import SelfAttention
 import os
 
 SEED = os.environ.get("SEED", 42)
